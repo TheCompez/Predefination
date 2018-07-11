@@ -1,7 +1,7 @@
 # Predefination
-Some patches for __cplusplus macro.
+**Some patches for __cplusplus macro.**
 ===================================
-In MSVC 2017 __cplusplus macro returns 199711 value :( that is wrong! you can use this patch for fix this problem in Micorosoft MSVC2017 compilers. :)
+In MSVC 2017 **__cplusplus** macro returns **199711** value :( that is wrong! you can use this patch for fix this problem in Micorosoft **MSVC2017** compilers. :)
 
 ```
 #include <iostream>
@@ -23,8 +23,18 @@ int main()
 
 ```
 
-Result: 
+**Note:**
+Make sure the default language is set to version 17 in .pro file.
 
+```
+CONFIG += c++17
+```
+Or
+```
+CONFIG += c++1z
+```
+
+**Result:** 
 ```
 Hello World!
 C++ Standard Version (MSVC) : 199711
