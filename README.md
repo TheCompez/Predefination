@@ -1,7 +1,7 @@
 # Predefination
 **Some patches for __cplusplus macro.**
 ===================================
-In MSVC 2017 **__cplusplus** macro returns **199711** value :( that is wrong! you can use this patch for fix this problem in Micorosoft **MSVC2017** compilers. :)
+In MSVC 2017 **__cplusplus** macro returns **199711** value :( that is wrong! you can use this patch for fix this problem in Microsoft **MSVC2017** compiler. :)
 
 ```cpp
 #include <iostream>
