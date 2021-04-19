@@ -5,21 +5,30 @@ In MSVC 2017 **__cplusplus** macro returns **199711** value :( that is wrong! yo
 
 ```cpp
 #include <iostream>
+#include "include/macro.hpp"
 
 using namespace std;
-
-#include "macro.h"
+using namespace Utility;
 
 int main()
 {
-    Macro mc;
-    cout << "Hello World!" << endl;
-    cout << "C++ Standard Version (MSVC) : " << __cplusplus << endl;
-    cout << "C++ Standard Version (with bug fix in MSVC : " << __GENESIS_CPP_VALUE__ << endl;
-    cout << "C++ Standard Version (with bug fix in MSVC using function: " << mc.get__cplusplus(false) << endl;
-    cout << "Compiler name using flag true: " << mc.get__cplusplus(true) << endl;
-    return 0;
+
+  MacroPatch mPatch;
+  cout << "Hello World!" << endl;
+  cout << "C++ Standard Version : " << __cplusplus << endl;
+  cout << "C++ Standard String : " << mPatch.__cPlusPlusStandard() << endl;
+#if defined(__PROJECT_MSVC__)
+  cout << "C++ Standard Version (with bug fix in MSVC : " << __PROJECT_CPP_VALUE__ << endl;
+  cout << "C++ Standard Value (with bug fix in MSVC using function: " << mPatch.__cPlusPlusValue() << endl;
+  cout << "C++ Standard Version (with bug fix in MSVC using function: " << mPatch.__cPlusPlusVersion() << endl;
+  cout << "Compiler name using flag: " << mc.__cPlusPlus(true) << endl;
+#else
+  cout << "Standard value: " << mPatch.__cPlusPlusValue() << endl;
+  cout << "Standard version: " << mPatch.__cPlusPlusVersion() << endl;
+#endif
+  return 0;
 }
+
 
 ```
 
