@@ -33,21 +33,21 @@ int main()
 ```
 
 **Note:**
-Make sure the default language is set to version 17 in .pro file.
+Make sure the default language is set to version 20 in CMakeLists.txt file.
 
 ```
-CONFIG += c++17
+CONFIG += c++20
 ```
 Or
 ```
-CONFIG += c++1z
+CONFIG += c++2a
 ```
 
 **Result:** 
 ```
 Hello World!
-C++ Standard Version (MSVC) : 199711
-C++ Standard Version (with bug fix in MSVC : 201703
-C++ Standard Version (with bug fix in MSVC using function: 201703
-Compiler name using flag true: MSVC++
+C++ Standard Version : 202002
+C++ Standard String : C++20
+Standard value: 202002
+Standard version: 202002
 ```
