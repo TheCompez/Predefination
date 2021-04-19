@@ -1,0 +1,7 @@
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/install/local.dir
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/install/strip.dir
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/install.dir
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/Predefination.dir
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/list_install_components.dir
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/rebuild_cache.dir
+/Users/compez/Documents/GitHub/Predefination/build/CMakeFiles/edit_cache.dir
