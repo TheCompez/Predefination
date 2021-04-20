@@ -36,11 +36,7 @@ int main()
 Make sure the default language is set to version 20 in CMakeLists.txt file.
 
 ```
-CONFIG += c++20
-```
-Or
-```
-CONFIG += c++2a
+CMAKE_CXX_STANDARD 20
 ```
 
 **Result:** 
